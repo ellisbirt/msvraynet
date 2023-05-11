@@ -269,7 +269,7 @@
 
         .center {
             margin: auto;
-            width: 50%;
+            width: 60%;
         }
 
         #divMain {
@@ -283,7 +283,7 @@
             list-style-type: disc;
             margin: 0;
             padding: 0;
-            margin-left: 25%;
+            margin-left: 20%;
         }
 
         @media only screen and (max-width: 1024px) {
@@ -373,22 +373,6 @@
         }
     </style>
     <script type="text/javascript" src="_wp_scripts/jquery.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("a.ActiveButton").bind(
-            {
-                mousedown: function () {
-                    if ($(this).attr('disabled') === undefined) $(this).addClass('Activated');
-                },
-                mouseleave: function () {
-                    if ($(this).attr('disabled') === undefined) $(this).removeClass('Activated');
-                },
-                mouseup: function () {
-                    if ($(this).attr('disabled') === undefined) $(this).removeClass('Activated');
-                }
-            });
-        });
-    </script>
 </head>
 <body style="min-height:1000px;background:#ffffff url('_wp_generated/wp43f2e6e8_06.gif') repeat scroll center top;width:100%;">
     <div id="divMain">
@@ -469,6 +453,8 @@
                 <span>HOME</span>
             </a>
         </div>
+        <br />
+        <p class="center P-3"><a href="https://www.raynet-uk.net/news/diary.asp">Visit the national <span class="P-2">RAYNET Event Diary</span> to see other groups events needing help.</a></p>
     </div>
 </body>
 </html>
