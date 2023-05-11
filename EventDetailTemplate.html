@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>[Event Title]</title>
-    <meta name="generator" content="Serif WebPlus X7">
-    <meta name="viewport" content="width=750">
     <link rel="stylesheet" type="text/css" href="_wp_scripts/wpstyles.css">
     <style type="text/css">
         .C-1 {
@@ -260,45 +258,73 @@
                 .img-button a:link, .img-button a:visited {
                     color: #0000ff;
                 }
+        .content {
+            margin: auto;
+            width: 60%;
+        }
+
+        #divMain {
+            margin: auto;
+            width: 100%;
+/*            text-align: center;*/
+            background: transparent;
+            padding-top: 20px;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .content {
+                margin-left: 10%;
+            }
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            .content {
+                margin-left: 10px;
+            }
+        }
+
     </style>
     <script type="text/javascript" src="_wp_scripts/jquery.js"></script>
 </head>
 <body style="height:750px;background:#ffffff url('_wp_generated/wp43f2e6e8_06.gif') repeat scroll center top;">
-    <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:750px;height:750px;">
-        <div id="txt_22">
-            <p class="C-1">[Event Title]</p>
-        </div>
-        <div id="txt_23">
-            <p class="C-2">[Event Status]</p>
-            <p class="C-4">[Event Date]<sup>th</sup></p>
-            <p class="C-4">[Event Description]</p>
-            <p class="C-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lectus vitae est congue ornare ac sit amet mauris. Curabitur scelerisque efficitur cursus. Nam ut auctor elit, id egestas libero. Integer et ultricies odio. Donec eu ipsum ultricies, facilisis augue vitae, convallis diam. Nulla ornare mattis dolor a dictum. Praesent id lacinia metus, eu volutpat ligula. Vivamus viverra nulla a bibendum tempor. Ut sed lacus efficitur, eleifend enim maximus, iaculis urna.
-            </p>
-            <p>
-                Aenean vel elementum mi, faucibus scelerisque arcu. Aliquam suscipit vitae felis vitae efficitur. Donec non pharetra lectus. Sed nec diam bibendum, viverra libero id, maximus libero. Cras varius mi nec est malesuada luctus. Pellentesque dictum mauris cursus commodo efficitur. Mauris eu augue ullamcorper, tempus tellus sed, cursus nisl. Donec et dignissim turpis. Vivamus et auctor felis.
-            </p>
-        </div>
-        <div id="txt_24">
-            <ul style="list-style-type:disc;margin:0;padding:0;">
-                <li class="Normal C-5" style="text-indent:0;margin-left:15.0px;">[NumOper] OPERATORS REQUIRED</li>
-                <li class="Normal C-5" style="text-indent:0;margin-left:15.0px;">VOLUNTEERS SO FAR: (none)</li>
-                <li class="Normal C-6" style="text-indent:0;margin-left:15.0px;">[NumNeeded] MORE NEEDED</li>
-            </ul>
-            <p class="Normal"><span class="C-6"><br></span></p>
-        </div>
-        <br />
-        <div class="center img-button">
-            <a href="page2.html" id="btn_166" class="ActiveButton">
-                <span>Back to Events</span>
-            </a>
-        </div>
-        <br />
-        <div id="txt_90">
-            <p class="Normal">
-                <a href=https://www.raynet-uk.net/zones.asp?zone =9" target="_blank" class="C-7">Click<span class="C-8"> </span></a><span class="C-9">here</span>
-                <a href="https://www.raynet-uk.net/zones.asp?zone=9" target="_blank" class="C-8"> <span class="C-7">for Raynet-<wbr>UK contact page</span></a>
-            </p>
+    <div id="divMain" style="background:transparent;">
+        <div class="content">
+            <div id="txt_22">
+                <p class="C-1">[Event Title]</p>
+            </div>
+            <div id="txt_23">
+                <p class="C-2">[Event Status]</p>
+                <p class="C-4">[Event Date]<sup>th</sup></p>
+                <p class="C-4">[Event Description]</p>
+                <p class="C-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lectus vitae est congue ornare ac sit amet mauris. Curabitur scelerisque efficitur cursus. Nam ut auctor elit, id egestas libero. Integer et ultricies odio. Donec eu ipsum ultricies, facilisis augue vitae, convallis diam. Nulla ornare mattis dolor a dictum. Praesent id lacinia metus, eu volutpat ligula. Vivamus viverra nulla a bibendum tempor. Ut sed lacus efficitur, eleifend enim maximus, iaculis urna.
+                </p>
+                <p>
+                    Aenean vel elementum mi, faucibus scelerisque arcu. Aliquam suscipit vitae felis vitae efficitur. Donec non pharetra lectus. Sed nec diam bibendum, viverra libero id, maximus libero. Cras varius mi nec est malesuada luctus. Pellentesque dictum mauris cursus commodo efficitur. Mauris eu augue ullamcorper, tempus tellus sed, cursus nisl. Donec et dignissim turpis. Vivamus et auctor felis.
+                </p>
+            </div>
+            <div id="txt_24">
+                <ul style="list-style-type:disc;margin:0;padding:0;">
+                    <li class="Normal C-5" style="text-indent:0;margin-left:15.0px;">[NumOper] OPERATORS REQUIRED</li>
+                    <li class="Normal C-5" style="text-indent:0;margin-left:15.0px;">VOLUNTEERS SO FAR: (none)</li>
+                    <li class="Normal C-6" style="text-indent:0;margin-left:15.0px;">[NumNeeded] MORE NEEDED</li>
+                </ul>
+                <p class="Normal"><span class="C-6"><br></span></p>
+            </div>
+            <br />
+            <div class="center img-button">
+                <a href="page2.html" id="btn_166" class="ActiveButton">
+                    <span>Back to Events</span>
+                </a>
+            </div>
+            <br />
+            <div id="txt_90">
+                <p class="Normal">
+                    <a href=https://www.raynet-uk.net/zones.asp?zone =9" target="_blank" class="C-7">Click<span class="C-8"> </span></a><span class="C-9">here</span>
+                    <a href="https://www.raynet-uk.net/zones.asp?zone=9" target="_blank" class="C-8"> <span class="C-7">for Raynet-<wbr>UK contact page</span></a>
+                </p>
+            </div>
         </div>
     </div>
 </body>
