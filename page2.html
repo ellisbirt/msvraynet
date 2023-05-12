@@ -73,7 +73,7 @@
             vertical-align: 0;
         }
 
-        .C-3 {
+        .month-caption {
             line-height: 20.00px;
             font-family: "Times New Roman", serif;
             font-style: normal;
@@ -100,7 +100,7 @@
             vertical-align: 0;
         }
 
-        .C-4 {
+        .event-status {
             line-height: 23.00px;
             font-family: "Times New Roman", serif;
             font-style: normal;
@@ -193,7 +193,7 @@
             vertical-align: 0;
         }
 
-        .C-10 {
+        .page-title {
             line-height: 27.00px;
             font-family: "Times New Roman", serif;
             font-style: normal;
@@ -204,6 +204,7 @@
             font-variant: normal;
             font-size: 24.0px;
             vertical-align: 0;
+            text-align: center
         }
 
         .OBJ-1, .OBJ-1:link, .OBJ-1:visited {
@@ -275,11 +276,12 @@
         #divMain {
             margin: auto;
             width: 100%;
-            text-align: center;
             background: transparent;
             padding-top: 20px;
         }
         .eventList {
+            margin: auto;
+            width: 60%;
             list-style-type: disc;
             margin: 0;
             padding: 0;
@@ -289,6 +291,7 @@
         @media only screen and (max-width: 1024px) {
             .eventList {
                 margin-left: 10%;
+                width: 75%;
             }
 
             .center {
@@ -300,6 +303,7 @@
         @media only screen and (max-width: 768px) {
             .eventList {
                 margin-left: 10px;
+                width: 90%;
             }
             .center{
                 width:90%;
@@ -356,8 +360,18 @@
             margin-top: 10px;
         }
 
-        .Date {
+        .date {
             margin-right: 10px;
+            line-height: 20.00px;
+            font-family: "Times New Roman", serif;
+            font-style: normal;
+            font-weight: 700;
+            color: #000000;
+            background-color: transparent;
+            text-decoration: none;
+            font-variant: normal;
+            font-size: 16.0px;
+            vertical-align: 0;
         }
 
         a:link {
@@ -376,9 +390,9 @@
 </head>
 <body style="min-height:1000px;background:#ffffff url('_wp_generated/wp43f2e6e8_06.gif') repeat scroll center top;width:100%;">
     <div id="divMain">
-        <div class="C-10">EVENTS</div>
+        <div class="page-title">EVENTS</div>
         <div id="txt_79">
-            <p class="Normal P-1"><span class="C-1">Updated 09/05/2023</span></p>
+            <p class="P-1"><span class="C-1">Updated 11/05/2023</span></p>
         </div>
         <div class="center img-button">
             <a href="index.html" id="btn_166" class="ActiveButton">
@@ -393,57 +407,57 @@
                 <p class="Normal P-2"><span class="C-2">Dates are provisional unless confirmed</span></p>
             </div>
         </div>
-        <div id="txt_11" class="center">
+        <div class="center">
             <ul class="eventList" style="">
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">March 2023</span>
+                    <span class="month-caption">March 2023</span>
                 </li>
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">April 2023</span>
+                    <span class="month-caption">April 2023</span>
                     <ul style="list-style-type:none">
-                        <li><a href="BlossomBikeaway2023.html"><span class="C-1 Date">Sun 16<sup>th</sup></span> Blossom bikeaway<span class="C-4">Completed</span></a></li>
-                        <li><a href="RTR2023.html"><span class="C-1 Date">Sun 23<sup>rd</sup></span>Ride the Reservoir<span class="C-4"> Completed</span></a></li>
+                        <li><a href="BlossomBikeaway2023.html"><span class="date">Sun 16<sup>th</sup></span> Blossom bikeaway<span class="event-status">Completed</span></a></li>
+                        <li><a href="RTR2023.html"><span class="date">Sun 23<sup>rd</sup></span>Ride the Reservoir<span class="event-status"> Completed</span></a></li>
                     </ul>
                 </li>
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">May 2023</span>
+                    <span class="month-caption">May 2023</span>
                     <ul style="list-style-type:none">
-                        <li><a href="MudRun2023.html"><span class="C-1 Date">Sun 7<sup>th</sup></span>Mud Run<span class="C-4">Completed</span></a></li>
-                        <li><a href="AGM.html"><span class="C-1 Date">Mon 22<sup>nd</sup></span>AGM<span class="C-4"> Confirmed</span></a></li>
+                        <li><a href="MudRun2023.html"><span class="date">Sun 7<sup>th</sup></span>Mud Run<span class="event-status">Completed</span></a></li>
+                        <li><a href="AGM.html"><span class="date">Mon 22<sup>nd</sup></span>AGM<span class="event-status"> Confirmed</span></a></li>
                     </ul>
                 </li>
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">June 2023</span>
+                    <span class="month-caption">June 2023</span>
                     <ul style="list-style-type:none">
-                        <li><a href="MidnightWalk.html"><span class="C-1 Date">Sat 17<sup>th</sup></span>Midnight Walk<span class="C-4">Confirmed</span></a></li>
-                        <li><a href="BewdleyCarnival.html"><span class="C-1 Date">Sat 24<sup>th</sup></span>Bewdley Carnival<span class="C-4"> Confirmed</span></a></li>
+                        <li><a href="MidnightWalk.html"><span class="date">Sat 17<sup>th</sup></span>Midnight Walk<span class="event-status">Confirmed</span></a></li>
+                        <li><a href="BewdleyCarnival.html"><span class="date">Sat 24<sup>th</sup></span>Bewdley Carnival<span class="event-status"> Confirmed</span></a></li>
                     </ul>
                 </li>
-                <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;"><span class="C-3">July 2023</span></li>
+                <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;"><span class="month-caption">July 2023</span></li>
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">August 2023</span>
+                    <span class="month-caption">August 2023</span>
                     <ul style="list-style-type:none">
-                        <li><a href="#"><span class="C-1 Date">Sun ??</span>Plum Bikeaway SJA<span class="C-4">Waiting Organiser</span></a></li>
+                        <li><a href="#"><span class="date">Sun ??</span>Plum Bikeaway SJA<span class="event-status">Waiting Organiser</span></a></li>
                     </ul>
                 </li>
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">September 2023</span>
+                    <span class="month-caption">September 2023</span>
                     <ul style="list-style-type:none">
-                        <li><a href="#"><span class="C-1 Date">Sat 23<sup>rd</sup></span>Redditch Carnival<span class="C-4">Waiting Organiser</span></a></li>
+                        <li><a href="#"><span class="date">Sat 23<sup>rd</sup></span>Redditch Carnival<span class="event-status">Waiting Organiser</span></a></li>
                     </ul>
                 </li>
-                <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;"><span class="C-3">October 2023</span></li>
+                <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;"><span class="month-caption">October 2023</span></li>
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">November 2023</span>
+                    <span class="month-caption">November 2023</span>
                     <ul style="list-style-type:none">
-                        <li><a href="Remembrance2023.html"><span class="C-1 Date">Sun 12<sup>th</sup></span>Remembrance Parade, Stourport<span class="C-4">Confirmed</span></a></li>
+                        <li><a href="Remembrance2023.html"><span class="date">Sun 12<sup>th</sup></span>Remembrance Parade, Stourport<span class="event-status">Confirmed</span></a></li>
                     </ul>
                 </li>
-                <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;"><span class="C-3">December 2023</span></li>
+                <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;"><span class="month-caption">December 2023</span></li>
                 <li class="Normal P-3 Month" style="text-indent:0;margin-left:15.0px;">
-                    <span class="C-3">May 2024</span>
+                    <span class="month-caption">May 2024</span>
                     <ul style="list-style-type:none">
-                        <li><a href="MudRun2024.html"><span class="C-1 Date">Sun 28<sup>th</sup></span>Mud Run<span class="C-4">Provisional</span></a></li>
+                        <li><a href="MudRun2024.html"><span class="date">Sun 28<sup>th</sup></span>Mud Run<span class="event-status">Provisional</span></a></li>
                     </ul>
                 </li>
             </ul>
