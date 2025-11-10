@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Event detail template</title>
+    <meta name="viewport" content="width=750">
+    <!-- Core site styles + consolidated event-scoped rules -->
+    <link rel="stylesheet" type="text/css" href="_wp_scripts/wpstyles.css">
+    <link rel="stylesheet" type="text/css" href="_wp_scripts/events-common.css">
+    <!-- Extracted template styles (layout, buttons, helpers) -->
+    <link rel="stylesheet" type="text/css" href="_wp_scripts/event-template.css">
+    <script type="text/javascript" src="_wp_scripts/jquery.js"></script>
+  </head>
+  <!--
+    Replace the body class with the appropriate event family so
+    `events-common.css` applies the correct visual identity.
+    Examples: class="mudrun" | class="rtr" | class="bewdley"
+  -->
+  <body class="event-detail">
+    <main id="divMain" class="event-main">
+      <header>
+        <h1 class="event-title C-1">EVENT TITLE</h1>
+      </header>
+
+      <section class="event-meta">
+        <p class="event-status C-2">Status</p>
+        <p class="event-sub C-3">Date — short description and venue details go here.</p>
+      </section>
+
+      <section class="event-details">
+        <ul class="event-list">
+          <li class="P-1 C-6">Operators required: X</li>
+          <li class="P-1 C-6">Volunteers so far: Name1, Name2</li>
+          <li class="P-2 C-5">More needed: Y</li>
+        </ul>
+      </section>
+
+      <!-- back button uses sprite defined in event-template.css -->
+      <p>
+        <a href="event-diary.html" class="back-button OBJ-1"><span>Back to Events</span></a>
+      </p>
+
+      <!-- Optional small callout linking to Raynet contact / zone info -->
+      <p class="event-note C-7">
+        <a href="http://www.raynet-uk.net/contact-us.html" target="_blank">Raynet-UK contact page</a>
+      </p>
+    </main>
+  </body>
+</html>

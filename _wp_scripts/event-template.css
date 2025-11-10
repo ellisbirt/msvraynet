@@ -1,0 +1,41 @@
+/* Event detail template CSS
+   Extracted from common inline styles used across event pages.
+   Meant to be included alongside _wp_scripts/events-common.css
+   Photographs/galleries intentionally omitted here.
+*/
+
+/* Layout */
+.event-main {
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 750px;
+  box-sizing: border-box;
+  padding: 18px 20px;
+}
+
+/* Typography helpers map to existing C- classes where useful */
+.event-title, .C-1 { font-family: "Times New Roman", serif; font-weight:700; font-size:24px; line-height:27px; color:#000080; }
+.event-status, .C-2 { font-weight:700; font-size:18.7px; color:#f73300; }
+.event-sub, .C-3, .C-4, .C-5 { font-family: "Times New Roman", serif; font-size:16px; color:#000; }
+.event-note, .C-6 { font-weight:700; color:#000080; }
+
+/* Simple list styling for operator lists */
+.event-list { list-style-type: disc; margin: 0; padding-left: 20px; }
+.event-list .P-1, .event-list .P-2 { margin-left: 0; text-indent: 0; }
+
+/* Back button - sprite-based but also usable without images */
+.back-button, .OBJ-1 { display: inline-block; width: 159px; height: 37px; text-decoration: none; background-repeat: no-repeat; background-position: 0 0; border: none; }
+.back-button span { display: block; font-family: Tahoma, sans-serif; font-weight: bold; font-style: italic; font-size: 13px; text-align:center; padding-top: 10px; color:#0000ff; }
+
+/* Default sprite for buttons (sprite location lives in _wp_generated) */
+.back-button { background-image: url('../_wp_generated/wp4bbed474_06.png'); }
+
+/* Small helper for the Raynet banner image used on many pages */
+.hs-banner { width: 325px; height: 27px; display:block; }
+
+/* Make the template responsive-ish by allowing the main container to shrink on small screens */
+@media (max-width: 768px) {
+  .event-main { width: 90%; padding: 12px; }
+}
