@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Event detail template</title>
+    <title>EVENT TITLE</title>
+    <meta name="generator" content="Serif WebPlus X7">
     <meta name="viewport" content="width=750">
-    <!-- Core site styles + consolidated event-scoped rules -->
+    <!-- Link order: base → event-family scoped → template utilities -->
     <link rel="stylesheet" type="text/css" href="_wp_scripts/wpstyles.css">
     <link rel="stylesheet" type="text/css" href="_wp_scripts/events-common.css">
-    <!-- Extracted template styles (layout, buttons, helpers) -->
     <link rel="stylesheet" type="text/css" href="_wp_scripts/event-template.css">
     <script type="text/javascript" src="_wp_scripts/jquery.js"></script>
-  </head>
-  <!--
-    Replace the body class with the appropriate event family so
-    `events-common.css` applies the correct visual identity.
-    Examples: class="mudrun" | class="rtr" | class="bewdley"
-  -->
-  <body class="event-detail">
-    <main id="divMain" class="event-main">
-      <header>
-        <h1 class="event-title C-1">EVENT TITLE</h1>
-      </header>
-
-      <section class="event-meta">
-        <p class="event-status C-2">Status</p>
-        <p class="event-sub C-3">Date — short description and venue details go here.</p>
-      </section>
-
-      <section class="event-details">
-        <ul class="event-list">
-          <li class="P-1 C-6">Operators required: X</li>
-          <li class="P-1 C-6">Volunteers so far: Name1, Name2</li>
-          <li class="P-2 C-5">More needed: Y</li>
-        </ul>
-      </section>
-
-      <!-- back button uses sprite defined in event-template.css -->
-      <p>
-        <a href="event-diary.html" class="back-button OBJ-1"><span>Back to Events</span></a>
-      </p>
-
-      <!-- Optional small callout linking to Raynet contact / zone info -->
-      <p class="event-note C-7">
-        <a href="http://www.raynet-uk.net/contact-us.html" target="_blank">Raynet-UK contact page</a>
-      </p>
-    </main>
-  </body>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('a.ActiveButton').bind({
+          mousedown: function() { if ($(this).attr('disabled') === undefined) $(this).addClass('Activated'); },
+          mouseleave: function() { if ($(this).attr('disabled') === undefined) $(this).removeClass('Activated'); },
+          mouseup: function() { if ($(this).attr('disabled') === undefined) $(this).removeClass('Activated'); }
+        });
+      });
+    </script>
+</head>
+<!--
+  INSTRUCTIONS FOR CREATING A NEW EVENT PAGE:
+  
+  1. Choose the event family (mudrun, rtr, or bewdley) based on the event type
+     - mudrun: Mud Run events (height: 1000px)
+     - rtr: Ride The Reservoir events (height: 750px)
+     - bewdley: Bewdley Carnival events (height: 750px)
+  
+  2. Set body class="[event-family]" to apply the correct visual identity from events-common.css
+  
+  3. Update divMain height to match the body class height
+  
+  4. Populate the positioned sections with event details
+  
+  5. Keep the back button link pointing to event-diary.html
+-->
+<body class="mudrun" style="height:1000px;background:#ffffff url('_wp_generated/wp43f2e6e8_06.gif') repeat scroll center top;">
+  <div id="divMain" style="background:transparent;margin-left:auto;margin-right:auto;position:relative;width:750px;height:1000px;">
+    
+    <!-- Title section -->
+    <div id="title" style="position:absolute;left:32px;top:76px;width:672px;height:37px;overflow:hidden;">
+      <p class="Normal"><span class="C-1">EVENT NAME</span></p>
+    </div>
+    
+    <!-- Description / meta section -->
+    <div id="description" style="position:absolute;left:32px;top:115px;width:671px;height:119px;overflow:hidden;">
+      <p class="Normal"><span class="C-2">Status</span></p>
+      <p class="Normal"><span class="C-3">Event details: Date, venue, and brief description here.</span></p>
+      <p class="Normal"><span class="C-5"><br></span></p>
+    </div>
+    
+    <!-- Operators/volunteers section -->
+    <div id="operators" style="position:absolute;left:36px;top:234px;width:672px;height:72px;overflow:hidden;">
+      <ul style="list-style-type:disc;margin:0;padding:0;">
+        <li class="Normal P-1" style="text-indent:0;margin-left:15.0px;"><span class="C-6">X OPERATORS REQUIRED</span></li>
+        <li class="Normal P-1" style="text-indent:0;margin-left:15.0px;"><span class="C-6">VOLUNTEERS SO FAR: Name1, Name2</span></li>
+        <li class="Normal P-1" style="text-indent:0;margin-left:15.0px;"><span class="C-6">Y MORE NEEDED</span></li>
+      </ul>
+    </div>
+    
+    <!-- Back button -->
+    <a href="event-diary.html" id="btn_back" class="OBJ-1 ActiveButton" style="position:absolute;left:40px;top:369px;width:159px;height:37px;">
+      <span>Back to Events</span>
+    </a>
+    
+    <!-- Optional: Raynet contact banner (if needed, uncomment and adjust positioning) -->
+    <!-- <div id="contact" style="position:absolute;left:36px;top:321px;width:338px;height:27px;overflow:hidden;">
+      <p class="Normal"><a href="http://www.raynet-uk.net/contact-us.html" target="_blank" class="C-8">Raynet-UK contact page</a></p>
+    </div>
+    <a href="https://www.raynet-uk.net/zones.asp?zone=9" target="_blank">
+      <img alt="" src="_wp_generated/wp5533b116.gif" id="hs_84" style="position:absolute;left:36px;top:321px;width:325px;height:27px;">
+    </a> -->
+  </div>
+</body>
 </html>
